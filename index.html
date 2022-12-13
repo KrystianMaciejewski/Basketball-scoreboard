@@ -3,15 +3,30 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div id="hero">
-        <h1>Reps done:</h1>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
-        <button id="save-btn" onclick="save()">SAVE & GO NEXT ROUND</button>
-        <p id="save-el">Previous entries: </p>
+        <div class="biggercontainer">
+            <div class="container">
+                <div >
+                    <h3>HOME</h3>
+                    <p id="homescore-el" class="counter"></p>
+                    <button class="btn" onclick="incrementHome(1)">+1</button>
+                    <button class="btn" onclick="incrementHome(2)">+2</button>
+                    <button class="btn" onclick="incrementHome(3)">+3</button>
+                </div>
+                <div>
+                    <h3>GUEST</h3>
+                    <p id="questscore-el" class="counter"></p>
+                    <button class="btn" onclick="incrementGuest(1)">+1</button>
+                    <button class="btn" onclick="incrementGuest(2)">+2</button>
+                    <button class="btn" onclick="incrementGuest(3)">+3</button>
+                </div>
+                
+          </div>
+        <div class="container" id="buttonsbox">
+            <button class="biggerbtn" onclick="refresh()">reset</button>
+            <button class="biggerbtn" onclick="getRandomInt(10)">random</button>
         </div>
-        <script src="index.js">
-            nnerText
-        </script>
+    </div>
+      
+        <script src="index.js"></script>
     </body>
 </html>
